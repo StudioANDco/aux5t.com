@@ -1,3 +1,30 @@
 ---
 ---
 @import '../_sass/main';
+@import '../_sass/post';
+@import '../_sass/nav';
+
+$container-width:960px;
+
+body {
+    background-color:$alt-color-light;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+.footer {
+    text-align:center;
+    margin:$normal-margin;
+    color:$main-color;
+}
+
+a {
+    text-decoration:none;
+    
+    &:hover {
+        color:$brand-color;
+    }
+}

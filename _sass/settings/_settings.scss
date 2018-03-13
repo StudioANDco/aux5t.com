@@ -13,31 +13,30 @@ $rtl:                               false;
  * Colors
  */
 
-$brand-color:                       #BE3144;
+$brand-color:                       #8a80a9;
 $alt-color-lighter:                 #e8ebee;
 $alt-color-light:                   #adb7c3;
 $alt-color:                         #738497;
 $alt-color-dark:                    #46515e;
 $alt-color-darker:                  #303841;
+$main-color:                        white;
 
 
 /**
  * Typography
  */
 
-$font-family-default:               -apple-system, BlinkMacSystemFont,
-                                    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-                                    'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                                    sans-serif;
+$font-family-default:               'foco', sans-serif !default;
 
 $font-size-default:                 16px;
 $font-size-small:                   .75rem;
-$font-size-large:                   1.5rem;
+$font-size-medium:                  1.5rem;
+$font-size-large:                   2rem;
 
-$line-height-default:               1.45;
+$line-height-default:               1.3;
 
 $text-color:                        $alt-color-darker;
-$link-color:                        $brand-color;
+$link-color:                        $main-color;
 $muted-color:                       transparentize($text-color, .4);
 
 

@@ -29,7 +29,7 @@
     <meta property="twitter:site" content="@{{ site.twitter_username }}" />
     <meta property="twitter:creator" content="@ANDco_o" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/crp1kbb.css">
     <link href="{{ site.url }}/styles/main.css" rel="stylesheet">
     <link href="{{ site.url }}/styles/print.css" rel="stylesheet" media="print">
 
@@ -53,24 +53,25 @@
     </script>
 
     <header>
-        <h1>{{ page.title }}</h1>
+        <h1>logo</h1>
     </header>
 
-    <nav>
+    <nav class="nav">
         <ul>
-            <li><a href="/">Homepage</a></li>
+            <li><a href="/" class="post__title">Homepage</a></li>
         </ul>
     </nav>
 
     {{ content }}
 
-    <footer>
+    <footer class="footer">
         <address>
-            {{ site.title }}<br>
-            {{ site.street }}<br>
-            {{ site.zip }} {{ site.city }}<br>
-            {{ site.state }} - {{ site.country }}<br>
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            {{ site.title }} |
+            {{ site.street }} |
+            {{ site.zip }} {{ site.city }} |
+            {{ site.state }} - {{ site.country }} |
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
+            designed by <b>Studio ANDco</b>
         </address>
     </footer>
 
