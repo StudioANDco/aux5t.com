@@ -52,17 +52,32 @@
         }
     </script>
 
-    <header>
-        <h1>logo</h1>
+    <header class="header">
+        <img src="{{ site.url }}/files/logo.png">
     </header>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="/" class="post__title">Homepage</a></li>
-        </ul>
+    <nav class="nav"></div>
+        <div class="nav__item">
+            <ul class=" nav__ul">
+                <li><a href="/" class="nav__title">Accueil</a></li>
+                <li><a href="/" class="nav__title">Contact</a></li>
+                <li><a href="/" class="nav__title">Mon Histoire</a></li>
+                <li><a href="/" class="nav__title">mes voyages</a></li>
+                <li><a href="/" class="nav__title">expositions</a></li>
+                <li><a href="/" class="nav__title">cérémonie de thé</a></li>
+                <li><a href="/" class="nav__title">initiation au thé</a></li>
+                <li><a href="/" class="nav__title">théières</a></li>
+                <li><a href="/" class="nav__title">thé exceptionnels</a></li>
+                <li><a href="/" class="nav__title">pu ehr</a></li>
+                <li><a href="/" class="nav__title">galette de thé</a></li>
+                <li><a href="/" class="nav__title">Vaisselles</a></li>
+            </ul>
+        </div>
     </nav>
 
     {{ content }}
+
+
 
     <footer class="footer">
         <address>
@@ -71,9 +86,10 @@
             {{ site.zip }} {{ site.city }} |
             {{ site.state }} - {{ site.country }} |
             <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
-            designed by <b>Studio ANDco</b>
+            designed by <b><a href="http://www.andco.ch" target="blank">Studio ANDco</a></b>
         </address>
     </footer>
+
 
     <script type="text/javascript" src="/javascripts/main.js"></script>
     <script type="text/javascript">

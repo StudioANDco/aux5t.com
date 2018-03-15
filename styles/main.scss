@@ -3,28 +3,47 @@
 @import '../_sass/main';
 @import '../_sass/post';
 @import '../_sass/nav';
+@import url("https://use.typekit.net/crp1kbb.css");
 
 $container-width:960px;
 
 body {
-    background-color:$alt-color-light;
+    background: url(/files/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container {
-	max-width: $container-width;
-	margin: 0 auto;
+    max-width: $container-width;
+    margin: 0 auto;
 }
 
 .footer {
     text-align:center;
-    margin:$normal-margin;
+    margin:$spacing-unit-default;
     color:$main-color;
 }
 
 a {
     text-decoration:none;
-    
+
     &:hover {
-        color:$brand-color;
+        color:white;
+        background-color:$brand-color;
+    }
+
+    &:active {
+        color:white;
+        background-color:$brand-color;
     }
 }
+
+.header {
+    position: fixed;
+    margin-left:300px;
+    margin-top:150px;
+}
+
+

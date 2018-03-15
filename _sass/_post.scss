@@ -1,19 +1,30 @@
-$normal-margin :20px;
-
 .post {
     color:$main-color;
+    font-family: "foco";
 }
 
 .post__title {
-    display:flex;
-    justify-content:center;
-    font-size:$font-size-medium;
-    padding:5px;
+    color:$brand-color;
+    display:inline-block;
+    justify-content:left;
+    font-size:$font-size-large;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:6px 10px 6px 10px;
     border-style:solid;
     border-width:2px;
-    width:inherit;
+    width:auto;
     margin:auto;
+    margin-top:$big-margin;
+}
+
+.post__subtitle {
+    font-size:$font-size-medium;
+    text-align: center;
+    font-weight:bold;
+    text-transform: uppercase;
     margin-top:$normal-margin;
+    color:$brand-color;
 }
 
 .post__item {
@@ -21,9 +32,27 @@ $normal-margin :20px;
     padding-right:$normal-margin;
     text-align:justify;
     margin-top:$normal-margin;
-    background-color:blue;
+    //background-color:blue;
+
+    img {
+        width:100%;
+        margin-bottom:$normal-margin;
+        border-radius:4px;
+    }
 }
 
-.post__item--double {
-    column-count:2;
+.post__double {
+    -webkit-column-width: 400px;
+    -moz-column-width: 400px;
+    column-width: 400px;
+    background-color:red;
+    height:50%;
+}
+
+.post__lined {
+    border-left:2px solid;
+    padding-left:$normal-margin;
+    list-style-type: none;
+    border-color:$brand-color;
+    margin-top:$normal-margin;
 }
