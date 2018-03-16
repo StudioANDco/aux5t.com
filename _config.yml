@@ -46,6 +46,13 @@ kramdown:
     input: GFM
     hard_wrap: false
 
+collections:
+    tea:
+        output: true
+
+    voyages:
+        output: true
+
 # Sitemap
 
 sitemap:
