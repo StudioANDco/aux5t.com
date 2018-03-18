@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<div class="post grid container">
+    {% for post in site.puehr | sort: 'date' %}
+        {% cycle '', '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>' %}
+        <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+        {% cycle '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>', '' %}
+    {% endfor %}
+
+</div>

@@ -53,6 +53,18 @@ collections:
     voyages:
         output: true
 
+    puehr:
+        output: true
+
+    expositions:
+        output: true
+
+    ceremonie:
+        output: true
+
+    exceptionnels:
+        output: true
+
 # Sitemap
 
 sitemap:
