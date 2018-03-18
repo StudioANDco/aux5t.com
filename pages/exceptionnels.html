@@ -11,14 +11,14 @@ layout: base
         <p>Les thés bleu-vert et les thés vert provenant de vieux théiers nécessitent un rinçage initial de quelques secondes avant la première infusion.</p>
         <p>Gaiwan/Théière, température de l’eau, temps d’infusion, nombre d’infusions possible</p>
 
-        {% for post in site.exceptionnels | sort: 'order' %}
+        {% for post in site.exceptionnels | sort: 'title' %}
             <a href=""><p class="post__lined">{{ post.title }}</p></a>
         {% endfor %}
     </div>
 
     <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>
 
-    {% for post in site.exceptionnels | sort: 'order' %}
+    {% for post in site.exceptionnels | sort: 'title' %}
     {% cycle '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>', '' %}
     <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
         <h1 class="post__title">{{ post.title }}</h1>
