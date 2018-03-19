@@ -30,8 +30,8 @@
     <meta property="twitter:creator" content="@ANDco_o" />
 
     <link rel="stylesheet" href="https://use.typekit.net/crp1kbb.css">
-    <link href="{{ site.url }}/{{ site.baseurl }}/styles/main.css" rel="stylesheet">
-    <link href="{{ site.url }}/{{ site.baseurl }}/styles/print.css" rel="stylesheet" media="print">
+    <link href="{{ site.url }}/{{ site.baseurl }}/styles/main.css?{{site.time | date: '%s%N'}}" rel="stylesheet">
+    <link href="{{ site.url }}/{{ site.baseurl }}/styles/print.css?{{site.time | date: '%s%N'}}" rel="stylesheet" media="print">
 
     <link rel="canonical" href="{{ site.url }}/{{ page.url }}">
 
@@ -95,7 +95,7 @@
         </address>
     </footer>
 
-    <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/javascripts/main.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/javascripts/main.js?{{site.time | date: '%s%N'}}"></script>
     <script type="text/javascript">
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
         ga('create', '{{ site.ga }}', 'auto');ga('send', 'pageview');
