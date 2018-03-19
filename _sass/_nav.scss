@@ -1,23 +1,17 @@
 .nav {
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index:1;
-    margin-top:150px;
-
 }
 
-.nav__ul {
+.nav__list {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__item {
-    margin-left:1400px;
-}
-
-
-.nav__title {
     color:$brand-color;
     display:inline-block;
     justify-content:left;

@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="post-list container">
+<div class="post-list">
     {% assign puehrs = site.puehr | sort: 'date' | reverse %}
     {% for post in puehrs %}
         <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">

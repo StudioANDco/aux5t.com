@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="post-list container">
+<div class="post-list">
     {% assign ceremonies = site.ceremonie | sort: 'order' %}
     {% for post in ceremonies %}
         <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
