@@ -1,10 +1,3 @@
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index:1;
-}
-
 .nav__list {
     list-style-type: none;
     margin: 0;
@@ -28,15 +21,14 @@
 
 .nav__toggle, .nav__hamburger {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 10px;
+    right: 10px;
 }
 
 .nav__toggle {
-    margin-top: 10px;
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 99999; /* and place it over the icon */
@@ -45,15 +37,43 @@
 }
 
 .nav__hamburger {
-    margin-top: 10px;
-    border: 10px solid red;
-    border-radius: 100px;
-    transition: border-radius;
     z-index: 99998;
 }
 
-.nav__toggle:checked ~ .nav__hamburger {
-    border-radius: 0;
+.nav__hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $brand-color;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),opacity 0.55s ease
+}
+
+.nav__hamburger span:first-child {
+    transform-origin: 0% 0%
+}
+
+.nav__hamburger span:nth-last-child(2) {
+    transform-origin: 0% 100%
+}
+
+.nav__toggle:checked ~ .nav__hamburger span {
+    opacity: 0;
+    background: white;
+}
+
+.nav__toggle:checked ~ .nav__hamburger span:first-child {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, -1px);
+}
+
+.nav__toggle:checked ~ .nav__hamburger span:last-child {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-3px, 0)
 }
 
 .nav__toggle:checked ~ .nav__list {
@@ -70,15 +90,34 @@
 
 @media only screen and (max-width: $screen-sm-max) {
     .nav__list {
+        background: $brand-color url('../files/logo-white.png') 20px center no-repeat;
+
         position: absolute;
-        right: 2em;
-        top: 65px;
-        padding: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        padding: 3em 1em;
 
         transform-origin: 0% 0%;
         transform: translate(0, calc(-65px - 100%));
 
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    }
 
+        > li {
+            text-align: right;
+        }
+
+        .nav__item {
+            color: white;
+            border-color: white;
+
+            &:hover {
+                background-color: white;
+                color: $brand-color;
+            }
+
+            justify-content: center;
+
+        }
+    }
 }
