@@ -2,8 +2,8 @@
 layout: base
 ---
 
+{% assign exceptionnels = site.exceptionnels | sort: 'title' %}
 <div class="post grid container">
-
     <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
         <h1 class="post__title">Thés exceptionnelles</h1>
         <p>J’ai testé ces thés en mettant 1 à 2 grammes de thé pour 2 dl d’eau, de telle manière que le goût soit léger et sans amertume. </p>
@@ -11,14 +11,14 @@ layout: base
         <p>Les thés bleu-vert et les thés vert provenant de vieux théiers nécessitent un rinçage initial de quelques secondes avant la première infusion.</p>
         <p>Gaiwan/Théière, température de l’eau, temps d’infusion, nombre d’infusions possible</p>
 
-        {% for post in site.exceptionnels | sort: 'title' %}
+        {% for post in exceptionnels %}
             <a href=""><p class="post__lined">{{ post.title }}</p></a>
         {% endfor %}
     </div>
 
     <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>
 
-    {% for post in site.exceptionnels | sort: 'title' %}
+    {% for post in exceptionnels %}
     {% cycle '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>', '' %}
     <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
         <h1 class="post__title">{{ post.title }}</h1>
