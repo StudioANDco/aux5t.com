@@ -16,8 +16,8 @@ twitter_username: "aux5t"
 ga: UA-60688229-1
 fb_app_id: 1778543192210095
 
-baseurl: ""
-url: "https://studioandco.github.io/aux5t.com/"
+baseurl: "/aux5t.com"
+url: "https://studioandco.github.io"
 
 exclude:
 

@@ -6,7 +6,7 @@ layout: base
 {% for image in site.static_files %}
     {% if image.path contains '/files/vaisselles' %}
         <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            <img src="{{ site.url }}/{{ site.baseurl }}/{{ image.path }}" alt="image" />
         </div>
     {% endif %}
 {% endfor %}
