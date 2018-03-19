@@ -2,14 +2,12 @@
 layout: base
 ---
 
-<div class="post grid container">
+<div class="post-list container">
 {% for image in site.static_files %}
     {% if image.path contains '/files/theieres' %}
-    {% cycle '', '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>' %}
-        <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
+        <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
             <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
         </div>
-        {% cycle '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>', '' %}
     {% endif %}
 {% endfor %}
 </div>

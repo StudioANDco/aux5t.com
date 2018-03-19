@@ -3,8 +3,8 @@ layout: base
 ---
 
 {% assign exceptionnels = site.exceptionnels | sort: 'title' %}
-<div class="post grid container">
-    <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
+<div class="post-list container">
+    <div class="post post--left lg-w-1/2">
         <h1 class="post__title">Thés exceptionnelles</h1>
         <p>J’ai testé ces thés en mettant 1 à 2 grammes de thé pour 2 dl d’eau, de telle manière que le goût soit léger et sans amertume. </p>
         <p>La richesse en théine ou en acides aminés dépend de la variété, des conditions climatiques, des feuilles cueillies (bourgeons, premières feuilles, etc) et de la méthode de séchage. Mais la force du thé dépend du goût de chacun: on peut donc soit infuser plus longtemps, soit mettre plus de feuilles. </p>
@@ -16,25 +16,19 @@ layout: base
         {% endfor %}
     </div>
 
-    <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>
-
     {% for post in exceptionnels %}
-    {% cycle '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>', '' %}
-    <div class="grid__item post__item lg-w-1/2 sm-w-1/1 xs-w-1/1">
-        <h1 class="post__title">{{ post.title }}</h1>
-        <p><b>Type | </b>{{ post.type }}</p>
-        <p><b>Variété | </b>{{ post.variety }}</p>
-        <p><b>Récolte | </b>{{ post.recolte }}</p>
-        <p><b>Provenance | </b>{{ post.provenance }}</p>
-        <p><b>Conservation | </b>{{ post.conservation }}</p>
-        <p><b>Goût | </b>{{ post.gout }}</p>
-        <p><b>Composition | </b>{{ post.composition }}</p>
-        <p><b>Gaiwan, théière | </b>{{ post.gaiwan }}</p>
+        <div class="post {% cycle 'post--right', 'post--left' %} lg-w-1/2">
+            <h1 class="post__title">{{ post.title }}</h1>
+            <p><b>Type | </b>{{ post.type }}</p>
+            <p><b>Variété | </b>{{ post.variety }}</p>
+            <p><b>Récolte | </b>{{ post.recolte }}</p>
+            <p><b>Provenance | </b>{{ post.provenance }}</p>
+            <p><b>Conservation | </b>{{ post.conservation }}</p>
+            <p><b>Goût | </b>{{ post.gout }}</p>
+            <p><b>Composition | </b>{{ post.composition }}</p>
+            <p><b>Gaiwan, théière | </b>{{ post.gaiwan }}</p>
 
-        {{ post.content }}
-
-    </div>
-    {% cycle '', '<div class="grid__item lg-w-1/2 sm-w-1/1 xs-w-1/1"></div>' %}
+            {{ post.content }}
+        </div>
     {% endfor %}
-
 </div>
