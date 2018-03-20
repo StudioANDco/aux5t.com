@@ -11,7 +11,7 @@ $container-margin-width: 145px;
 
 
 body {
-    background: url('{{ site.url }}/{{ site.baseurl }}/files/background.png') no-repeat center center fixed;
+    background: url('{{ site.url }}/{{ site.baseurl }}/files/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,6 +34,6 @@ a {
 
 @media only screen and (max-width: $screen-sm-max) {
     body {
-        background-image: url('{{ site.url }}/{{ site.baseurl }}/files/background-mobile.png');
+        background-image: url('{{ site.url }}/{{ site.baseurl }}/files/background-mobile.jpg');
     }
 }
