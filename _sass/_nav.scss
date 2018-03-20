@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.nav__mobile__logo {
+    width:300px;
+}
+
 .nav__item {
     color:$brand-color;
     display:inline-block;
@@ -14,7 +18,7 @@
     padding:5px;
     border-style:solid;
     border-width:2px;
-    width:auto;
+    width:fit-content;
     margin:auto;
     margin-top:$small-margin;
 }
@@ -104,7 +108,7 @@
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
         > li {
-            text-align: right;
+            text-align: center;
         }
 
         .nav__item {
