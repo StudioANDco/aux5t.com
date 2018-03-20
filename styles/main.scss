@@ -32,4 +32,8 @@ a {
     }
 }
 
-
+@media only screen and (max-width: $screen-sm-max) {
+    body {
+        background-image: url('{{ site.url }}/{{ site.baseurl }}/files/background-mobile.png');
+    }
+}
