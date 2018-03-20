@@ -25,12 +25,13 @@
             margin-left: calc(100% - #{2* $container-margin-width + 30});
         }
 
-        .container__footer {
-            text-align: center;
-            margin: $spacing-unit-default;
-            color: $main-color;
-        }
     }
+}
+
+.container__footer {
+    text-align: center;
+    margin: $spacing-unit-default;
+    color: $main-color;
 }
 
 @media (min-width: 2 * $container-margin-width + $container-width) {
