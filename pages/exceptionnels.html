@@ -12,12 +12,12 @@ layout: base
         <p>Gaiwan/Théière, température de l’eau, temps d’infusion, nombre d’infusions possible</p>
 
         {% for post in exceptionnels %}
-            <a href=""><p class="post__lined">{{ post.title }}</p></a>
+            <a href="#{{ post.slug }}"><p class="post__lined">{{ post.title }}</p></a>
         {% endfor %}
     </div>
 
     {% for post in exceptionnels %}
-        <div class="post {% cycle 'post--right', 'post--left' %} lg-w-1/2">
+        <div class="post {% cycle 'post--right', 'post--left' %} lg-w-1/2" id="{{ post.slug }}">
             <h1 class="post__title">{{ post.title }}</h1>
             <p><b>Type | </b>{{ post.type }}</p>
             <p><b>Variété | </b>{{ post.variety }}</p>
