@@ -1,0 +1,49 @@
+---
+layout: base
+---
+
+<form action="{{ '/contact.php' | absolute_url }}" class="box grid">
+    <div class="grid__item w-1/1">
+        <label for="name">Nom et prénom</label>
+        <input placeholder="Nom et prénom" id="name" name="name" type="text">
+    </div>
+
+    <div class="grid__item w-1/1">
+        <label for="address">Adresse</label>
+        <input placeholder="Adresse" id="address" name="address" type="text">
+    </div>
+
+    <div class="grid__item w-1/3">
+        <label for="zipcode">Code postal</label>
+        <input placeholder="Code postal" id="zipcode" name="zipcode" type="text">
+    </div>
+
+    <div class="grid__item w-2/3">
+        <label for="city">Ville</label>
+        <input placeholder="Ville" id="city" name="city" type="text">
+    </div>
+
+    <div class="grid__item w-1/1">
+        <label for="email">E-mail</label>
+        <input placeholder="E-mail" id="email" name="email" type="email">
+    </div>
+
+    <div class="grid__item w-1/1">
+        <label for="reason">Sujet</label>
+        <select id="reason" name="reason">
+            <option value="none">Veuillez choisir un sujet</option>
+            <option value="information">Demande d'informations</option>
+            <option value="commande">Commande</option>
+            <option value="autre">Autre</option>
+        </select>
+    </div>
+
+    <div class="grid__item md-w-1/1">
+        <label for="message">Message</label>
+        <textarea placeholder="Votre message" id="message" name="message"></textarea>
+    </div>
+
+    <div class="grid__item md-w-1/1">
+        <input type="submit" value="Envoyer">
+    </div>
+</form>
