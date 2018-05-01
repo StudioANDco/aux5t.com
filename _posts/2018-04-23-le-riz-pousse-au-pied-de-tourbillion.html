@@ -1,8 +1,39 @@
 ---
 layout: base
+title: Le riz pousse au pied de tourbillion
 ---
 
-<form action="{{ '/contact.php' | absolute_url }}" method="POST" class="box sm-w-1/2">
+<p><b>Soutien pour la réédition de mon livre</b></p>
+
+<p class="post__lined">
+    <b>1. soutien de 125CHF</b>
+    <br>Livre numéroté de 1 à 25
+    <br>Cuisine gastronomique vietnamienne (avec 4 autres personnes)
+    <br>Dégustation de thé vietnamien
+</p>
+
+<p class="post__lined">
+    <b>2. soutien de 50 CHF</b>
+    <br>Livre numéroté de 26 à 100
+    <br>1 kg de riz nouveau parfumé au jasmin + jus de coco
+    <br>Thé vietnamien
+    <br>Recette de cuisine
+</p>
+
+<p class="post__lined">
+    <b>3. précommande 25 CHF</b>
+    <br>Livre
+    <br>Paquet de thé au jasmin
+</p>
+
+<p class="post__lined">
+    <b>4. précommande 18 CHF</b>
+    <br>Prix du livre à sa sortie : 20 CHF
+</p>
+
+<!-- formulaires de commandes -->
+
+<form action="{{ '/contact.php' | absolute_url }}" method="POST">
     <div class="form-group grid">
         <div class="grid__item sm-w-1/1">
             <label for="name" class="field-label">Nom et prénom</label>
@@ -61,6 +92,5 @@ layout: base
             <input type="submit" value="Envoyer" class="field">
         </div>
     </div>
-
 
 </form>

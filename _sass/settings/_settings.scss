@@ -46,6 +46,7 @@ $muted-color:                       transparentize($text-color, .4);
 
 $ratio:                             1.61803398875;
 
+$extra-small:                        8px;
 $small-margin:                      10px;
 $normal-margin:                     20px;
 $big-margin:                        100px;
@@ -140,30 +141,30 @@ $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%);
  * Forms
  */
 
-$field-padding:                     $spacing-unit-small/$ratio $spacing-unit-small;
+$field-padding:                     $extra-small/$ratio $spacing-unit-small;
 
 $field-color:                       inherit;
-$field-font-size:                   inherit;
+$field-font-size:                   $font-size-medium;
 $field-font-family:                 inherit;
 $field-line-height:                 $line-height-default;
 
-$field-bkg-color:                   white;
-$field-border:                      1px solid $alt-color-light;
+$field-bkg-color:                   transparent;
+$field-border:                      2px solid $brand-color;
 $field-focus-border-color:          $alt-color-darker;
-$field-border-radius:               $border-radius-default;
+$field-border-radius:               none;
 
 $field-disabled-bkg-color:          $alt-color-lighter;
 $field-disabled-color:              $alt-color;
 
-$field-small-padding:               $spacing-unit-tiny/$ratio $spacing-unit-tiny;
+$field-small-padding:               $extra-small/$ratio $spacing-unit-tiny;
 $field-small-font-size:             $font-size-small;
 $field-small-border:                $field-border;
 $field-small-border-radius:         $border-radius-small;
 
-$field-large-padding:               $spacing-unit-default/$ratio $spacing-unit-default;
-$field-large-font-size:             $font-size-large;
+$field-large-padding:               $extra-small/$ratio $spacing-unit-default;
+$field-large-font-size:             $font-size-medium;
 $field-large-border:                $field-border;
-$field-large-border-radius:         $border-radius-large;
+$field-large-border-radius:         none;
 
 $field-help-color:                  $alt-color-light;
 
