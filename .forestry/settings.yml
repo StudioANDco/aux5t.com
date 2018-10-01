@@ -1,0 +1,47 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: directory
+  path: _tea
+  label: Tea
+  create: all
+  match: "**/*"
+- type: directory
+  path: _voyages
+  label: Voyages
+  create: all
+  match: "**/*"
+- type: directory
+  path: _puehr
+  label: Puehr
+  create: all
+  match: "**/*"
+- type: directory
+  path: _expositions
+  label: Expositions
+  create: all
+  match: "**/*"
+- type: directory
+  path: _ceremonie
+  label: Ceremonie
+  create: all
+  match: "**/*"
+- type: directory
+  path: _exceptionnels
+  label: Exceptionnels
+  create: all
+  match: "**/*"
+- type: jekyll-posts
+  label: Posts
+  create: all
+- type: jekyll-pages
+  label: Pages
+  create: all
+upload_dir: uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
