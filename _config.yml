@@ -1,23 +1,23 @@
-title: Aux5t
-description: La galerie d'art qui vous convie au thé.
+title: Traces de Passages
+description: Nous voulons parler de nous, de nos proches, de nos voisins avec respect et affection avant que le vent de la modernité ne disperse les traces de notre passage
 author: Studio ANDco
-email: trinh@aux5t.com
+email: tracesdepassages@gmail.com
 
-street: "Rue de la Cathédrale 15"
-city: "Sion"
-zip: "1950"
-state: "Valais"
+street: "Rue du Simplon 26"
+city: "Lausanne"
+zip: "1006"
+state: "Vaud"
 country: "Suisse"
-latitude: "46.234479"
-longitude: "7.359570"
+latitude: "46.516102"
+longitude: "6.629562"
 
-twitter_username: "aux5t"
+twitter_username: "Traces de Passage"
 
-ga: UA-60688229-1
+ga: Others
 fb_app_id: 1778543192210095
 
 baseurl: ""
-url: "https://aux5t.com"
+url: "https://tracedepassages.ch"
 
 exclude:
 
