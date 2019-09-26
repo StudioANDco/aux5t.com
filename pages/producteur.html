@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<div class="post-list">
+    {% assign producteur = site.producteur | sort: 'date' | reverse %}
+    {% for post in producteur %}
+        <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
