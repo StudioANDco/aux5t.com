@@ -65,6 +65,9 @@ collections:
     exceptionnels:
         output: true
 
+    producteur:
+        output: true
+
 # Sitemap
 
 sitemap:
