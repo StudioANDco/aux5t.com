@@ -2,21 +2,17 @@
 layout: base
 ---
 
-{% assign exceptionnels = site.exceptionnels | sort: 'title' %}
+{% assign rooibos = site.rooibos | sort: 'title' %}
 <div class="post-list">
     <div class="post post--left lg-w-1/2">
-        <h1 class="post__title">Thés exceptionnelles</h1>
-        <p>J’ai testé ces thés en mettant 1 à 2 grammes de thé pour 2 dl d’eau, de telle manière que le goût soit léger et sans amertume. </p>
-        <p>La richesse en théine ou en acides aminés dépend de la variété, des conditions climatiques, des feuilles cueillies (bourgeons, premières feuilles, etc) et de la méthode de séchage. Mais la force du thé dépend du goût de chacun: on peut donc soit infuser plus longtemps, soit mettre plus de feuilles. </p>
-        <p>Les thés bleu-vert et les thés vert provenant de vieux théiers nécessitent un rinçage initial de quelques secondes avant la première infusion.</p>
-        <p>Gaiwan/Théière, température de l’eau, temps d’infusion, nombre d’infusions possible</p>
+        <h1 class="post__title">Rooibos</h1>
 
-        {% for post in exceptionnels %}
+        {% for post in rooibos %}
             <a href="#{{ post.slug }}"><p class="post__lined">{{ post.title }}</p></a>
         {% endfor %}
     </div>
 
-    {% for post in exceptionnels %}
+    {% for post in rooibos %}
         <div class="post {% cycle 'post--right', 'post--left' %} lg-w-1/2" id="{{ post.slug }}">
             <h1 class="post__title">{{ post.title }}</h1>
             <p><b>Type | </b>{{ post.type }}</p>
