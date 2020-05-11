@@ -8,7 +8,8 @@ layout: base
         <h1 class="post__title">Rooibos</h1>
 
         {% for post in rooibos %}
-            <a href="#{{ post.slug }}"><p class="post__lined">{{ post.title }}</p></a>
+            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}</p>
+            {{ post.content }}
         {% endfor %}
     </div>
 
