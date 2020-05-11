@@ -71,6 +71,9 @@ collections:
     rooibos:
         output: true
 
+    infusion:
+        output: true
+
 # Sitemap
 
 sitemap:

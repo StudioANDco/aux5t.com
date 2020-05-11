@@ -12,20 +12,16 @@ layout: base
             {{ post.content }}
         {% endfor %}
     </div>
+</div>
 
-    {% for post in rooibos %}
-        <div class="post {% cycle 'post--right', 'post--left' %} lg-w-1/2" id="{{ post.slug }}">
-            <h1 class="post__title">{{ post.title }}</h1>
-            <p><b>Type | </b>{{ post.type }}</p>
-            <p><b>Variété | </b>{{ post.variety }}</p>
-            <p><b>Récolte | </b>{{ post.recolte }}</p>
-            <p><b>Provenance | </b>{{ post.provenance }}</p>
-            <p><b>Conservation | </b>{{ post.conservation }}</p>
-            <p><b>Goût | </b>{{ post.gout }}</p>
-            <p><b>Composition | </b>{{ post.composition }}</p>
-            <p><b>Gaiwan, théière | </b>{{ post.gaiwan }}</p>
+{% assign infusion = site.infusion | sort: 'title' %}
+<div class="post-list">
+    <div class="post post--right lg-w-1/2">
+        <h1 class="post__title">Infusion</h1>
 
+        {% for post in infusion %}
+            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.-</p>
             {{ post.content }}
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
