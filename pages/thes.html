@@ -2,10 +2,14 @@
 layout: base
 ---
 
+{% assign rooibos = site.rooibos | sort: 'title' %}
 <div class="post-list">
-    {% assign rooibos = site.rooibos | sort: 'title' %}
+    <div class="post post--left lg-w-1/2">
+        <h1 class="post__title">Rooibos</h1>
+    </div>
+
     {% for post in rooibos %}
-        <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
+        <div class="post {% cycle 'post--right', 'post--left' %} lg-w-1/2" id="{{ post.slug }}">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
