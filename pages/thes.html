@@ -1,17 +1,19 @@
 ---
 layout: base
 ---
+{% assign rooibos = site.rooibos | sort: 'title' %}
+{% assign infusion = site.infusion | sort: 'title' %}
 
 <div class="post-list">
+
     <div class="post post--left lg-w-1/2">
         <h1 class="post__title">Nos thés</h1>
         <a href="#rooibos"><p class="post__lined">Rooibos</p></a>
         <a href="#infusion"><p class="post__lined">Infusion</p></a>
     </div>
 
-{% assign rooibos = site.rooibos | sort: 'title' %}
-<div class="post-list">
-    <div id="Rooibos" class="post post--right lg-w-1/2">
+    <div class="post post--right lg-w-1/2">
+        <a id="Rooibos"></a>
         <h1 class="post__title">Rooibos</h1>
 
         {% for post in rooibos %}
@@ -20,11 +22,9 @@ layout: base
             </p>
         {% endfor %}
     </div>
-</div>
 
-{% assign infusion = site.infusion | sort: 'title' %}
-<div class="post-list">
-    <div id="Infusion" class="post post--left lg-w-1/2">
+    <div class="post post--left lg-w-1/2">
+        <a id="Infusion"></a>
         <h1 class="post__title">Infusion</h1>
 
         {% for post in infusion %}
@@ -32,4 +32,5 @@ layout: base
             {{ post.content }}
         {% endfor %}
     </div>
+
 </div>
