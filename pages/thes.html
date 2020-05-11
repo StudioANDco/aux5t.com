@@ -8,12 +8,13 @@ layout: base
 
     <div class="post post--left lg-w-1/2">
         <h1 class="post__title">Nos thés</h1>
-        <a href="#rooibos"><p class="post__lined">Rooibos</p></a>
-        <a href="#infusion"><p class="post__lined">Infusion</p></a>
+        <ul class="list-inline list-inline--divided">
+        <li><a href="#rooibos">Rooibos</a></li>
+        <li><a href="#Infusion">infusion</a></li>
+        </ul>
     </div>
 
-    <div class="post post--right lg-w-1/2">
-        <a id="Rooibos"></a>
+    <div class="post post--right lg-w-1/2" id="rooibos">
         <h1 class="post__title">Rooibos</h1>
 
         {% for post in rooibos %}
@@ -24,7 +25,6 @@ layout: base
     </div>
 
     <div class="post post--left lg-w-1/2">
-        <a id="Infusion"></a>
         <h1 class="post__title">Infusion</h1>
 
         {% for post in infusion %}
