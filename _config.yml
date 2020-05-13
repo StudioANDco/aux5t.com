@@ -74,6 +74,9 @@ collections:
     infusion:
         output: true
 
+    tisane:
+        output: true
+
 # Sitemap
 
 sitemap:
