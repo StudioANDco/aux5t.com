@@ -77,10 +77,10 @@ collections:
     tisane:
         output: true
 
-    noirs-parfumes:
+    noirsparfumes:
         output: true
 
-    verts-parfumes:
+    vertsparfumes:
         output: true
 
 # Sitemap
