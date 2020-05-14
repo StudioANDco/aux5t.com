@@ -12,8 +12,8 @@ layout: base
         <li><a href="#rooibos">Rooibos</a></li>
         <li><a href="#Infusion">infusion</a></li>
         <li><a href="#tisane">Tisane</a></li>
-        <li><a href="#Infusion">Thés noir parfumés</a></li>
-        <li><a href="#Infusion">Thés verts parfumés</a></li>
+        <li><a href="#noirsparfumes">Thés noir parfumés</a></li>
+        <li><a href="#vertsparfumes">Thés verts parfumés</a></li>
         <li><a href="#Infusion">Thés noir</a></li>
         <li><a href="#Infusion">Thés fumés</a></li>
         <li><a href="#Infusion">Les grands crus</a></li>
@@ -46,6 +46,27 @@ layout: base
         <h1 class="post__title">Tisane</h1>
 
         {% for post in tisane %}
+            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.- <br>
+            {{ post.content }}
+            </p>
+        {% endfor %}
+        <a href="#top">&#9757;</a>
+    </div>
+
+    <div class="post post--right lg-w-1/2" id="noirsparfumes">
+        <h1 class="post__title">Thés noirs parfumés</h1>
+
+        {% for post in noirs-parfumes %}
+            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.-</p>
+            {{ post.content }}
+        {% endfor %}
+        <a href="#top">&#9757;</a>
+    </div>
+
+    <div class="post post--left lg-w-1/2" id="vertsparfumes">
+        <h1 class="post__title">Thés verts parfumés</h1>
+
+        {% for post in verts-parfumes %}
             <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.- <br>
             {{ post.content }}
             </p>
