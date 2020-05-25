@@ -77,6 +77,12 @@ collections:
     tisane:
         output: true
 
+    noirsparfumes:
+        output: true
+
+    vertsparfumes:
+        output: true
+
 # Sitemap
 
 sitemap:
