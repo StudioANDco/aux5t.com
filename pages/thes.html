@@ -39,7 +39,7 @@ layout: base
         <h1 class="post__title">Infusion</h1>
 
         {% for post in infusion %}
-            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.-<br>
+            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.- <br>
             {{ post.content }}
             </p>
         {% endfor %}
@@ -61,8 +61,9 @@ layout: base
         <h1 class="post__title">Thés noirs parfumés</h1>
     
         {% for post in noirsparfumes %}
-            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.-</p>
+            <p><b>{{ post.title }} | </b>{{ post.grammes }} - {{ post.prix }}CHF.- <br>
             {{ post.content }}
+            </p>
         {% endfor %}
         <a href="#top">&#9757;</a>
     </div>
