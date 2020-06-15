@@ -83,6 +83,18 @@ collections:
     vertsparfumes:
         output: true
 
+    thesnoirs:
+        output: true
+
+    thesfumes:
+        output: true
+
+    grandscrus:
+        output: true
+
+    oolong:
+        output: true
+
 # Sitemap
 
 sitemap:
