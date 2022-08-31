@@ -53,7 +53,7 @@ collections:
     voyages:
         output: true
 
-    puehr:
+    puErh:
         output: true
 
     expositions:
