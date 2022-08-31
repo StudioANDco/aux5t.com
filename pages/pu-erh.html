@@ -4,7 +4,7 @@ layout: base
 
 <div class="post-list">
     {% assign puErhs = site.puErh | sort: 'date' | reverse %}
-    {% for post in puErhs %}
+    {% for post in puerhs %}
         <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
