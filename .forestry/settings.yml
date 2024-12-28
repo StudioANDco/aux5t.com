@@ -34,6 +34,11 @@ sections:
   label: Exceptionnels
   create: all
   match: "**/*"
+- type: directory
+path: _matcha
+label: Matcha
+create: all
+match: "**/*"
 - type: jekyll-posts
   label: Posts
   create: all
