@@ -94,6 +94,9 @@ collections:
     oolong:
         output: true
 
+    matcha:
+        output: true
+
 # Sitemap
 
 sitemap:
